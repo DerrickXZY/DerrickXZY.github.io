@@ -1,0 +1,628 @@
+/* PROBLEM 1: Remove white margin of body, html */
+/* YOUR CODE HERE */
+#contentA {
+	margin:0 auto;
+	text-align: center;
+	width: 700px;
+	height:500px;
+}
+#contentB {
+	margin-top:0px;
+	float:left;
+}
+.smallerimage {
+	height: 400px;
+	margin-left:100px;
+	left: 50%;
+}
+#bio-pic {
+	position: absolute;
+	left: 870px;
+	height: 400px;
+	margin-top:70px;
+	margin-left:50px;
+	margin-right:900px;
+}
+#Derrick{
+	height: 400px;
+	width: 280px;
+}
+.itemA {
+	position: absolute;
+	margin-top:50px;
+	background-color: rgba(0, 0, 0, 0);
+	display: inline-block;
+	opacity: 0.8;
+}
+#picturesA{
+	margin-top:50px;
+}
+.item {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	display: inline-block;
+	opacity: 0.8;
+}
+
+#usernameA {
+	position: relative;
+	bottom: 30px;
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+		position: absolute;
+    /*position: absolute; //*/
+    z-index: -1;
+    opacity: 0.7;
+		background: #f7ba5b;
+}
+#paragraph{
+	position: relative;
+	bottom: 35px;
+	right: 10px;
+	font-size: 275%;
+	color: #333333c9;
+	font-family: 'Playball', cursive;
+}
+
+#shortbio{
+	position: relative;
+	bottom: 50px;
+	left: 70px;
+	font-size: 250%;
+	color: #333333c9;
+	font-family: 'Niconne', cursive;
+}
+
+#usernameB {
+
+	font-size: 30px;
+	display: inline-block;
+	margin-top: 10px;
+}
+.jesse{
+	height: 100%;
+	position: absolute;
+	margin-left: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	/*background-color: #f7ba5b;*/
+}
+
+body{
+	/*position: relative;*/
+	margin: 0;
+	/*font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	height: 100vh;
+	color: #333;*/
+}
+
+#pictures{
+	position: relative;
+	bottom: 50px;
+}
+
+img {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+#profile-pic {
+  border: 2px;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.life-pic {
+	height: 150px;
+	width: 150px;
+	margin-right: 1px;
+	margin-left: 5px;
+	margin-top: 45px;
+	margin-bottom: 5px;
+	top: 100px;
+	left: 40px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	opacity: 0.7;
+}
+
+.life-pic:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.life-pic {
+	overflow: hidden;
+	position: relative;
+}
+
+.life-pic {
+	cursor: pointer;
+}
+
+#button-spine {
+    position: absolute;
+    top: 150px;
+    transform: translateY(-50%);
+    text-align: center;
+    height: 150px;
+		left: 1400px;
+    z-index: 2;
+}
+.button {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 10%;
+    cursor: pointer;
+    margin: 20px;
+    z-index: 3;
+}
+
+.button:active {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes rotate {
+    from {opacity: 0.7; border-radius: 0; transform: rotate(0deg);}
+    to {opacity: 1; border-radius: 80%; transform: rotate(180deg);}
+}
+.button:hover {
+    animation: rotate 0.5s ease-out 0s 1;
+}
+
+.active {
+    opacity: 1;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inactive {
+    opacity: 0.6;
+    box-shadow: none;
+}
+
+#orange {
+    background: #ffb532;
+}
+
+#blue {
+    background: #7fa9e5;
+}
+#green {
+		background: #78e370;
+}
+
+#information {
+	position: relative;
+}
+
+#focus-tag:focus {
+	 border: 2px solid #246B61;
+}
+
+#header {
+	/*background-color:#f7ba5b;*/
+}
+
+.item {
+	width: 350px;
+  height: 500px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: absolute;
+	left: 10px;
+	right: 160px;
+	position: relative;
+	background-color: #f7ba5b;
+	display: inline-block;
+	opacity: 0.7;
+	font-family: 'Lobster', cursive;
+	font-size: 150%;
+	color: Black;
+}
+
+.item:hover{
+	animation: hover 1.5s ease-in-out 0s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hover{
+	from {width: 350px;}
+	to {width: 680px;}
+}
+
+#close {
+	color: white;
+	font: 36px/100% arial, sans-serif;
+  	position: absolute;
+	right: 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	top: 20px;
+	z-index: 3;
+}
+
+#close {
+	color: white;
+	font: 36px/100% arial, sans-serif;
+  	position: absolute;
+	right: 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	top: 20px;
+	z-index: 3;
+}
+
+#layOver {
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+}
+
+#image-container {
+	height: 70vh;
+	width: 70vh;
+	border: 5px solid #fafafa;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	overflow: hidden;
+	background-color: grey;
+}
+
+#image {
+	position: relative;
+	height: 100%;
+}
+
+/* Everything below is from hw2! */
+
+.row {
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+
+.navbar-item:hover {
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+#results {
+	position: relative;
+	bottom: 85px;
+	left: 40px;
+	font-size: 150%;
+	color: #6b6966;
+	font-family: 'Lobster', cursive;
+}
+
+#advanced-search {
+	left: 30px;
+	top: 10px;
+	position: relative;
+	font-weight: bold;
+	float: right;
+	font-size: 110%;
+	color: black;
+	font-family: 'Lobster', cursive;
+}
+
+#Skills{
+	position: absolute;
+	top: 125px;
+	left: 130px;
+}
+
+#title{
+	position: relative;
+	font-size: 200%;
+	color: Green;
+}
+#familiar{
+	position: absolute;
+	font-size: 160%;
+	top: 148px;
+	color: #EF476F;
+	opacity: 0.9;
+	left: 176px;
+}
+
+#proficient{
+	position: relative;
+	font-size: 160%;
+	right: 5px;
+	color: #0b495ed9;
+	opacity: 0.9;
+}
+
+#Experience{
+	position: absolute;
+	left: 500px;
+	top: 125px;
+}
+
+#WorkOneTitle{
+	position: relative;
+	color: #0b495ed9;
+	opacity: 0.9;
+	font-size: 150%;
+}
+#WorkOneDes{
+	position: relative;
+	color: #0b495ed9;
+	opacity: 0.9;
+	bottom: 25px;
+	font-size: 90%;
+}
+
+#ProjectOneTitle{
+	position: relative;
+	color: #EF476F;
+	opacity: 0.9;
+	bottom: 15px;
+	font-size: 150%;
+}
+
+#ProjectOneDes{
+	position: relative;
+	color: #EF476F;
+	opacity: 0.9;
+	bottom: 25px;
+	font-size: 90%;
+}
+
+#ProjectTwoTitle{
+	position: relative;
+	color: #6c71c4;
+	opacity: 0.9;
+	bottom: 15px;
+	font-size: 150%;
+}
+
+#ProjectTwoDes{
+	position: relative;
+	color: #6c71c4;
+	opacity: 0.9;
+	bottom: 25px;
+	font-size: 90%;
+}
+
+.advanced-search-item {
+	top: -10px;
+	color: black;
+	margin-right: 30px;
+	margin-left: 10px;
+	float: right;
+	line-height: 60px;
+	opacity: 1;
+}
+
+.advanced-search-item:hover {
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+#log-in {
+	position: absolute;
+	left:50px;
+	top:20px;
+	color: #555251;
+	opacity:1;
+	font-size: 130%;
+}
+
+#log-in:hover {
+	opacity: 0.7;
+	transition: 0.2s;
+}
+.item:hover {
+	opacity: 1;
+	transition: 0.2s
+}
+
+#follow-button:active {
+	font-size: 180%;
+}
+
+#content:hover {
+	opacity: 1;
+}
+
+#content {
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+	/*background-color: #f7ba5b;*/
+	opacity: 0.4;
+	position: relative;
+}
+
+#navbar {
+	height: 40px;
+	/*background: #f7ba5b;*/
+}
+
+.navbar-item {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #555251;
+	float: right;
+	line-height: 40px;
+	opacity: 1;
+	font-size: 105%;
+}
+
+#header {
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 150px;
+	padding: 10px 0px;
+}
+
+#information {
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	left: 170px;
+	margin-top: 10px;
+	margin-left: -10px;
+	color: rgba(0,0,0, .7);
+}
+
+#username {
+	font-size: 35px;
+	display: inline-block;
+	margin-top: 10px;
+	font-family: 'Ubuntu', sans-serif;
+}
+#bio {
+	position: relative;
+	font-size: 22px;
+	margin-top: 8px;
+	color: rgba(0,0,0, .5);
+	line-height: 1.5em;
+	width: 270px;
+	left: 30px;
+
+}
+#about {
+	position: relative;
+	font-size: 25px;
+	margin-top: 8px;
+	color: rgba(0,0,0, .5);
+	line-height: 1.5em;
+	width: 270px;
+	left: 30px;
+}
+
+#about2 {
+	position: relative;
+	font-size: 25px;
+	margin-top: 8px;
+	color: rgba(0,0,0, .5);
+	line-height: 1.5em;
+	width: 270px;
+	left: 1000px;
+	bottom: 450px;
+	font-family: 'Dancing Script', cursive;
+}
+
+#about3 {
+	position: relative;
+	font-size: 25px;
+	margin-top: 8px;
+	color: rgba(0,0,0, .5);
+	line-height: 1.5em;
+	width: 270px;
+	left: 1000px;
+	bottom: 400px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.row {
+	width: 100%;
+	height: 120px;
+	text-align: center;
+}
+
+#profile-pic {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	left: 1050px;
+	bottom: 30px;
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#last-line {
+	width: 100%;
+	height: 1000px;
+}
+#more-results {
+	font-weight: bold;
+	font-family: 'Lobster', cursive;
+	font-size: 200%;
+	bottom:0;
+	position: fixed;
+}
+
+#more-results:hover {
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+.item, #profile-pic {
+	overflow: hidden;
+	position: relative;
+}
+
+.item,
+.navbar-item,
+.advanced-search-item,
+#more-results {
+	cursor: pointer;
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+.wrapper-active, .button-active {
+	-webkit-transform: translateX(150px);
+	-moz-transform: translateX(150px);
+	transform: translateX(150px);
+}
+
+#nav-toggle {
+	position: absolute;
+	left: 50%; top: 50%;
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px;
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
